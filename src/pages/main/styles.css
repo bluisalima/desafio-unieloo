@@ -1,31 +1,20 @@
-.users-list {
-    max-width: 700px;
-    margin: 20px auto 0;
-    padding: 0 20 px;
+.users-list{
+    margin: 30px;
+    width: 400px;
+    min-height: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 68px 45px 45px;
+    display: flex;
+    flex-direction: row;
 }
 
-.users-list article{
-    background: #fff;
-    border: 1 px solid #DDD;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.users-list article p {
-    font-size: 16px;
-    color: #999;
-    margin-top: 5px;
-    line-height: 24px;
-}
-
-.users-list article a {
+.users-list a {
     height: 42px;
     border-radius: 5px;
-    border: 2px solid rgb(117, 24, 105);
+    border: 2px solid rgb(1, 115, 128);
     background: none;
     margin-top: 10px;
-    color: rgb(117, 24, 105);
+    color: rgb(1, 115, 128);
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
@@ -35,7 +24,21 @@
     transition: all 0.2s;
 }
 
-.users-list article a:hover{
-    background: rgb(117, 24, 105) ;
+.users-list a:hover{
+    background: rgb(1, 115, 128);
     color: #fff;
+}
+
+ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+    background-color: rgb(225, 225, 225);
+}
+
+.users-list img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }

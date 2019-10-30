@@ -20,15 +20,16 @@ export default class Main extends Component{
     render() {
         const { usuarios } = this.state;
         return (
-            <div className="users-list">
+            <ul>
                 {usuarios.map(medico => (
-                    <article key={medico.id}>
-                        <strong>{medico.User.name}</strong>
-                        <p>{medico.description}</p>
+                    <li key={medico.id} className="users-list">
+                        <img src={medico.User.profileImg} />
+                                                                       
                         <a href="">Detalhes</a>
-                    </article>
+                        <a href="">Mapa</a>
+                    </li>
                 ))}
-            </div>
+            </ul>
         );
     }
 }
