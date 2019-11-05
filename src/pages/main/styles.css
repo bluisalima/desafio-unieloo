@@ -1,14 +1,36 @@
 .users-list{
     margin: 30px;
-    width: 400px;
-    min-height: 450px;
+    top: 50%;
+    width: 300px;
+    min-height: 100%;
     background-color: rgb(255, 255, 255);
-    border-radius: 68px 45px 45px;
     display: flex;
     flex-direction: row;
+    box-shadow:0 20px 50px rgba(0,0,0,.1);
+    border-radius:10px;
+    transition:0.5s;
 }
 
-.users-list a {
+.users-list:hover {
+    box-shadow:0 30px 70px rgba(0,0,0,.3);
+}
+.users-list .box{
+    width: 100%;
+    text-align:center;
+    padding: 20px;
+    left:0;
+}
+
+.users-list .box span{
+    font-size:14px;
+    background:rgb(1, 115, 128);
+    color:#fff;
+    display:inline-block;
+    padding:4px 10px;
+    border-radius:15px;
+}
+
+.users-list .box a {
     height: 42px;
     border-radius: 5px;
     border: 2px solid rgb(1, 115, 128);
@@ -22,23 +44,34 @@
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
+    
 }
 
-.users-list a:hover{
+.users-list .box a:hover{
     background: rgb(1, 115, 128);
     color: #fff;
 }
 
+.users-list .box p{
+    padding: 10px;
+    color:#444141dc;
+}
+
 ul{
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    padding-top: 30px;
     padding-bottom: 50px;
     background-color: rgb(225, 225, 225);
+    position: relative;
 }
 
-.users-list img{
+.users-list .box img{
     width: 100px;
     height: 100px;
+    margin:0 auto;
     border-radius: 50%;
+    overflow:hidden;
 }
