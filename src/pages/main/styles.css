@@ -21,6 +21,14 @@
     left:0;
 }
 
+.users-list .box img{
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
 .users-list .box span{
     font-size:14px;
     background:rgb(1, 115, 128);
@@ -66,12 +74,4 @@ ul{
     padding-bottom: 50px;
     background-color: rgb(225, 225, 225);
     position: relative;
-}
-
-.users-list .box img{
-    width: 100px;
-    height: 100px;
-    margin:0 auto;
-    border-radius: 50%;
-    overflow:hidden;
 }
